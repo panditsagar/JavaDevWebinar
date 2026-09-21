@@ -1,0 +1,341 @@
+:root {
+  /* Brand colors */
+  --color-primary: #0038ff; /* Electric Blue */
+  --color-secondary: #ffd600; /* Bright Yellow */
+
+  --color-dark: #0f172a;
+  --color-text: #1f2937;
+  --color-text-muted: #64748b;
+
+  --font-heading: "Clash Grotesk", "Plus Jakarta Sans", sans-serif;
+  --font-body: "Plus Jakarta Sans", -apple-system, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none; /* NO BORDERS ANYWHERE */
+}
+
+html {
+  font-family: var(--font-body);
+  background-color: #ffffff;
+  color: var(--color-text);
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+.container {
+  width: min(100% - 32px, 1100px); /* Expanded container width */
+  margin: 0 auto;
+}
+
+/* ==========================================================================
+   Top Badge Container (Positioned at Very Top Side of Screen)
+   ========================================================================== */
+.top-badge-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 12px;
+}
+
+.top-badge {
+  display: inline-block;
+  width: fit-content;
+  min-width: 600px;
+  text-align: center;
+  background-color: var(--color-secondary); /* Bright Yellow BG */
+  color: var(--color-dark);
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 10px 24px;
+  border-radius: 0px 0px 10px 10px;
+}
+
+/* ==========================================================================
+   Hero Section Layout
+   ========================================================================== */
+.hero-section {
+  flex: 1;
+  width: 100%;
+  padding: 20px 0 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content-box {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1000px; /* Expanded for larger video size */
+  margin: 0 auto;
+}
+
+/* Main Headline */
+.hero-title {
+  font-family: var(--font-heading);
+  font-size: 2.4rem;
+  line-height: 1.15;
+  color: var(--color-dark);
+  font-weight: 600;
+  font-style: normal;
+  text-transform: none;
+  
+}
+
+.text-blue {
+  color: var(--color-primary);
+  font-style: normal;
+}
+
+/* Subheadline */
+.hero-subheadline {
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: var(--color-text-muted);
+  margin-top: 20px;
+  max-width: 960px;
+  line-height: 1.4;
+  font-style: normal;
+  text-transform: none;
+}
+
+/* Solid Yellow Rounded Highlight Pill */
+.highlight-yellow-pill {
+  background-color: var(--color-secondary);
+  color: var(--color-dark);
+  padding: 2px 10px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-style: normal;
+  border: none;
+}
+
+/* ==========================================================================
+   Masterclass Media Component (Larger 16:9 Video Container)
+   ========================================================================== */
+.webinar-media-wrapper {
+  margin-top: 44px;
+  margin-bottom: 32px;
+  width: 100%;
+  max-width: 960px; /* Increased video width */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+/* Floating Metadata Card (Above Video) */
+.meta-info-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  padding: 16px 40px;
+  border-radius: 30px 30px 0px 0px;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.2);
+  width: fit-content;
+  min-width: 620px;
+ 
+  position: relative;
+  z-index: 10;
+  border: none;
+}
+
+.meta-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.meta-label {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+.meta-value {
+  font-size: 1.25rem;
+  color: var(--color-dark);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.text-blue-time {
+  color: #0038ff;
+  font-weight: 700;
+}
+
+.meta-divider {
+  width: 1px;
+  height: 38px;
+  background-color: #e2e8f0;
+  margin: 0 20px;
+}
+
+/* Video Player Preview Container (Expanded 16:9 Size) */
+.video-preview-card {
+  position: relative;
+  width: 100%;
+  border-radius: 24px;
+}
+
+.video-frame {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  aspect-ratio: 16 / 9; /* Maintained 16:9 Aspect Ratio */
+  border-radius: 24px;
+  overflow: hidden;
+  background: #000000;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.18);
+  border: none;
+}
+
+.video-iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 24px;
+  display: block;
+}
+
+ 
+/* Clean CTA Button (Exact match to reference image) */
+.hero-cta-wrap {
+  margin-top: 28px;
+}
+
+.btn-container-relative {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  border-radius: 8px; /* Reduced border-radius */
+  font-family: var(--font-heading);
+  font-style: normal;
+  
+  border: none;
+}
+
+.btn-yellow-hero {
+  background-color: var(--color-secondary); /* Bright Yellow */
+  color: #000000;
+  min-width: 520px;
+  padding: 18px 64px;
+  font-size: 1.6rem;
+  font-weight: 500;
+  box-shadow: 10px 10px 0px #000000; /* Solid Black Offset Shadow */
+  border-radius: 6px; /* Reduced border-radius */
+  border: none;
+}
+
+.btn-yellow-hero:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 8px 8px 0px #000000;
+}
+
+.btn-yellow-hero:active {
+  transform: translate(2px, 2px);
+  box-shadow: 4px 4px 0px #000000;
+}
+
+.btn-arrow {
+  font-size: 2.4rem;
+  font-weight: 800;
+  margin-left: 4px;
+}
+
+.btn-accent-arrow {
+  position: absolute;
+  right: -82px;
+  top: 30%;
+  transform: translateY(-50%);
+  width:    66px;
+  height: auto;
+  pointer-events: none;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 992px) {
+  .hero-title {
+    font-size: 3.2rem;
+  }
+  .hero-subheadline {
+    font-size: 1.15rem;
+  }
+  .webinar-media-wrapper {
+    max-width: 100%;
+  }
+  .meta-info-card {
+    min-width: 90%;
+    padding: 12px 20px;
+  }
+  .meta-value {
+    font-size: 1.05rem;
+  }
+  .meta-divider {
+    margin: 0 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .top-badge-container {
+    padding-top: 16px;
+  }
+  .top-badge {
+    font-size: 0.95rem;
+    padding: 6px 14px;
+  }
+  .hero-title {
+    font-size: 2.2rem;
+  }
+  .hero-subheadline {
+    font-size: 1rem;
+  }
+  .meta-info-card {
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 16px;
+    position: static;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    background: #ffffff;
+    width: 100%;
+    min-width: auto;
+    border-radius: 16px;
+    align-items: center;
+  }
+  .meta-col {
+    align-items: center;
+  }
+  .meta-divider {
+    display: none;
+  }
+  .btn-yellow-hero {
+    font-size: 1.15rem;
+    padding: 14px 24px;
+    width: 100%;
+  }
+}
