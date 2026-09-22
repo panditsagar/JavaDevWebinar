@@ -1660,8 +1660,8 @@ body {
 
 .flow-pill {
   font-family: var(--font-heading);
-  font-size: 0.95rem;
-  font-weight: 600;
+  font-size: 1rem;
+  font-weight: 500;
   color: #ffffff;
   background-color: var(--color-primary);
   padding: 8px 18px;
