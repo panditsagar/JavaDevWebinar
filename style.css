@@ -621,46 +621,60 @@ body {
 
 .framework-card {
   background: #ffffff;
-  padding: 32px 32px;
-  border-radius: 14px;
+  padding: 28px 28px;
+  border-radius: 16px;
   border: none;
-  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.07);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.06);
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: flex-start;
+  gap: 20px;
   text-align: left;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.framework-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.1);
-}
+ 
 
-.framework-card-header {
+.framework-icon-box {
+  width: 72px;
+  height: 72px;
+  min-width: 72px;
+  border-radius: 18px;
   display: flex;
   align-items: center;
-  gap: 14px;
-  margin-bottom: 14px;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.framework-badge {
-  font-family: var(--font-heading);
-  font-size: 1.05rem;
-  font-weight: 700;
-  color: #000000;
-  background-color: var(--color-secondary);
-  padding: 6px 12px;
-  border-radius: 6px;
-  line-height: 1;
+ 
+
+.framework-card-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+/* Framework Card Blue Theme */
+.theme-blue {
+  background-color: #DCE6FF;
+  color: #1B49FF;
+}
+.title-blue {
+  color: #1B49FF;
 }
 
 .framework-card-title {
   font-family: var(--font-heading);
-  font-size: 1.35rem;
+  font-size: 1.4rem;
   font-weight: 600;
-  color: var(--color-dark);
-  line-height: 1.2;
+  line-height: 1.25;
+  margin-bottom: 8px;
 }
 
 .framework-card-desc {
@@ -668,6 +682,7 @@ body {
   color: var(--color-text-muted);
   line-height: 1.5;
   font-weight: 500;
+  margin: 0;
 }
 
 .framework-callout-box {
