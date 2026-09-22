@@ -67,7 +67,7 @@ body {
 .hero-section {
   flex: 1;
   width: 100%;
-  padding: 20px 0 80px;
+  padding: 20px 0 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -91,7 +91,6 @@ body {
   font-weight: 600;
   font-style: normal;
   text-transform: none;
-  
 }
 
 .text-blue {
@@ -147,7 +146,7 @@ body {
   box-shadow: 0 16px 36px rgba(0, 0, 0, 0.2);
   width: fit-content;
   min-width: 620px;
- 
+
   position: relative;
   z-index: 10;
   border: none;
@@ -213,7 +212,6 @@ body {
   display: block;
 }
 
- 
 /* Clean CTA Button (Exact match to reference image) */
 .hero-cta-wrap {
   margin-top: 28px;
@@ -232,11 +230,13 @@ body {
   gap: 12px;
   text-decoration: none;
   cursor: pointer;
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
   border-radius: 8px; /* Reduced border-radius */
   font-family: var(--font-heading);
   font-style: normal;
-  
+
   border: none;
 }
 
@@ -273,9 +273,289 @@ body {
   right: -82px;
   top: 30%;
   transform: translateY(-50%);
-  width:    66px;
+  width: 66px;
   height: auto;
   pointer-events: none;
+}
+
+/* ==========================================================================
+   Company Logos Marquee (Below CTA)
+   ========================================================================== */
+.logo-marquee-section {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  margin-top: 78px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.marquee-subtitle {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  color: #000000;
+  margin-bottom: 44px;
+  text-align: center;
+  width: 100%;
+}
+
+.marquee-slider {
+  width: 100vw;
+  max-width: 100vw;
+  overflow: hidden;
+  position: relative;
+  /* Soft fade gradient on left & right screen edges */
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 5%,
+    black 95%,
+    transparent 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 5%,
+    black 95%,
+    transparent 100%
+  );
+}
+
+.marquee-track {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  animation: marquee-scroll 25s linear infinite;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+.marquee-item {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 32px;
+}
+
+.marquee-item img {
+  height: 60px;
+  width: auto;
+  max-width: 160px;
+  object-fit: contain;
+  /* Retain original full logo colors */
+  transition: transform 0.3s ease;
+}
+
+.marquee-item img:hover {
+  transform: scale(1.08);
+}
+
+@keyframes marquee-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* ==========================================================================
+   Stats Section
+   ========================================================================== */
+.stats-section {
+  width: 100%;
+  padding: 34px 0 80px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+
+.stats-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.stats-title {
+  font-family: var(--font-heading);
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: var(--color-dark);
+  line-height: 1.25;
+  margin-bottom: 54px;
+  max-width: 900px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  width: 100%;
+  max-width: 1000px;
+  margin-bottom: 48px;
+}
+
+.stat-card {
+  background: #ffffff;
+  padding: 40px 24px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.06);
+}
+
+.stat-number {
+  font-family: var(--font-heading);
+  font-size: 3.2rem;
+  font-weight: 800;
+  color: var(--color-primary);
+  line-height: 1.1;
+  margin-bottom: 12px;
+}
+
+.stat-number.text-highlight {
+  color: #000000;
+  background: var(--color-secondary);
+  padding: 4px 16px;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+.stat-label {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--color-text);
+  line-height: 1.35;
+  max-width: 240px;
+}
+
+.stats-callout-box {
+  background-color: #f1f5f9;
+  padding: 28px 40px;
+  border-radius: 16px;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.stats-callout-text {
+  font-size: 1.25rem;
+  line-height: 1.55;
+  color: var(--color-text);
+  font-weight: 500;
+}
+
+.stats-callout-text strong {
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+/* ==========================================================================
+   Problems / Job Switch Section
+   ========================================================================== */
+.problems-section {
+  width: 100%;
+  padding: 0px 0 90px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+
+.problems-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.problems-header {
+  text-align: center;
+  max-width: 900px;
+  margin-bottom: 48px;
+}
+
+.problems-title {
+  font-family: var(--font-heading);
+  font-size: 2.4rem;
+  font-weight: 600;
+  max-width: 700px;
+  color: var(--color-dark);
+  line-height: 1.15;
+  margin-bottom: 20px;
+}
+
+.problems-intro {
+  font-size: 1.25rem;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.problems-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.problem-card {
+  background: #ffffff;
+  padding: 32px 32px;
+  border-radius: 14px;
+  border: none;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.07);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.problem-blue-badge {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #000000;
+  background-color: var(--color-secondary);
+  padding: 5px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  display: inline-block;
+  line-height: 1;
+}
+
+.problem-card-title {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.15;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.problem-card-title .title-dark {
+  color: var(--color-dark);
+}
+
+.problem-card-title .title-blue {
+  color: var(--color-primary);
+}
+
+.problem-card-desc {
+  font-size: 1.02rem;
+  color: var(--color-text-muted);
+  line-height: 1.45;
+  font-weight: 500;
 }
 
 /* Responsive Breakpoints */
@@ -298,6 +578,24 @@ body {
   }
   .meta-divider {
     margin: 0 8px;
+  }
+  .stats-grid {
+    gap: 16px;
+  }
+  .stats-title {
+    font-size: 1.9rem;
+  }
+  .stat-number {
+    font-size: 2.5rem;
+  }
+  .stat-label {
+    font-size: 0.95rem;
+  }
+  .problems-title {
+    font-size: 1.9rem;
+  }
+  .problems-intro {
+    font-size: 1.1rem;
   }
 }
 
@@ -337,5 +635,56 @@ body {
     font-size: 1.15rem;
     padding: 14px 24px;
     width: 100%;
+  }
+  .logo-marquee-section {
+    margin-top: 36px;
+  }
+  .marquee-subtitle {
+    font-size: 0.75rem;
+    margin-bottom: 16px;
+    padding: 0 16px;
+  }
+  .marquee-item {
+    padding: 0 18px;
+  }
+  .marquee-item img {
+    height: 30px;
+    max-width: 110px;
+  }
+  .stats-section {
+    padding: 16px 0 50px;
+  }
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .stats-title {
+    font-size: 1.5rem;
+    margin-bottom: 32px;
+  }
+  .stat-number {
+    font-size: 2.8rem;
+  }
+  .stats-callout-text {
+    font-size: 1.05rem;
+  }
+  .stats-callout-box {
+    padding: 20px 20px;
+  }
+  .problems-section {
+    padding: 50px 0 60px;
+  }
+  .problems-title {
+    font-size: 1.6rem;
+  }
+  .problems-intro {
+    font-size: 1.05rem;
+  }
+  .problems-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  .problem-card {
+    padding: 24px 20px;
   }
 }
