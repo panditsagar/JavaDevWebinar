@@ -30,6 +30,7 @@ body {
   flex-direction: column;
   align-items: center;
   overflow-x: hidden;
+  padding-bottom: 92px;
 }
 
 .container {
@@ -1586,7 +1587,7 @@ body {
    ========================================================================== */
 .final-cta-section {
   width: 100%;
-  padding: 20px 0 110px;
+  padding: 20px 0 80px;
   background-color: transparent;
   display: flex;
   justify-content: center;
@@ -1678,6 +1679,93 @@ body {
 .final-cta-btn-wrap {
   display: flex;
   justify-content: center;
+}
+
+/* ==========================================================================
+   Sticky Registration Footer
+   ========================================================================== */
+.sticky-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  width: 100%;
+  border-radius: 18px 18px 0 0;
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 -12px 30px rgba(15, 23, 42, 0.14);
+  backdrop-filter: blur(14px);
+}
+
+.sticky-footer-inner {
+  width: min(100% - 32px, 1100px);
+  min-height: 76px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 12px 0;
+}
+
+.sticky-footer-time {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--color-dark);
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.sticky-footer-label {
+  color: var(--color-primary);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+}
+
+.sticky-footer-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--color-secondary);
+  box-shadow: 0 0 0 4px rgba(255, 214, 0, 0.22);
+}
+
+.sticky-footer-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 230px;
+  min-height: 48px;
+  padding: 12px 24px;
+  border-radius: 6px;
+  background: var(--color-secondary);
+  color: #000000;
+  box-shadow: 6px 6px 0 #000000;
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.sticky-footer-cta:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 4px 4px 0 #000000;
+}
+
+.sticky-footer-cta:active {
+  transform: translate(0, 0);
+  box-shadow: 2px 2px 0 #000000;
 }
 
 /* ==========================================================================
@@ -2192,5 +2280,22 @@ body {
     width: 28px;
     height: 28px;
     min-width: 28px;
+  }
+  body {
+    padding-bottom: 88px;
+  }
+  .sticky-footer-inner {
+    min-height: 72px;
+    align-items: stretch;
+    padding: 14px 0;
+  }
+  .sticky-footer-time {
+    display: none;
+  }
+  .sticky-footer-cta {
+    width: 100%;
+    min-width: 0;
+    min-height: 46px;
+    font-size: 1rem;
   }
 }
