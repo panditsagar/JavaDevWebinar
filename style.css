@@ -1105,6 +1105,581 @@ body {
   justify-content: center;
 }
 
+/* ==========================================================================
+   Comparison Section: What Makes 6P SalaryLEAP Different
+   ========================================================================== */
+.comparison-section {
+  width: 100%;
+  padding: 20px 0 90px;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+}
+
+.comparison-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: min(100% - 32px, 1140px);
+}
+
+.comparison-header {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.comparison-title {
+  font-family: var(--font-heading);
+  font-size: 2.4rem;
+  font-weight: 600;
+  max-width: 600px;
+  color: var(--color-dark);
+  line-height: 1.2;
+  margin: 0 auto 18px;
+  text-align: center;
+}
+
+.comparison-intro {
+  font-size: 1.25rem;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+  font-weight: 500;
+  max-width: 820px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.comparison-table-wrapper {
+  width: 100%;
+  max-width: 1100px;
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 16px 20px 22px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.comparison-table {
+  width: 100%;
+  min-width: 680px;
+  border-collapse: separate;
+  border-spacing: 0;
+  text-align: center;
+}
+
+/* Headers */
+.comparison-table th {
+  padding: 12px 10px 14px;
+  vertical-align: bottom;
+}
+
+.th-features {
+  text-align: left;
+  padding-left: 14px !important;
+  width: 37%;
+}
+
+.features-header-title {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--color-dark);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.th-col {
+  width: 20%;
+}
+
+.col-title {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--color-dark);
+  display: block;
+}
+
+/* Highlighted Center Column: 6P SalaryLEAP Pillar Card */
+.th-leap {
+  width: 23%;
+  position: relative;
+}
+
+.highlighted-col-header {
+  background-color: #f0f4ff;
+  border-top: 2px solid var(--color-primary);
+  border-left: 2px solid var(--color-primary);
+  border-right: 2px solid var(--color-primary);
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  padding-top: 10px !important;
+  padding-bottom: 14px !important;
+}
+
+.leap-header-badge {
+  display: inline-block;
+  background-color: var(--color-secondary); /* Bright Yellow */
+  color: var(--color-dark);
+  font-family: var(--font-heading);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  padding: 8px;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  box-shadow: 0 2px 6px rgba(255, 214, 0, 0.4);
+}
+
+.leap-title {
+  color: var(--color-primary);
+  font-size: 1.08rem;
+  font-weight: 600;
+}
+
+/* Table Cells */
+.comparison-table td {
+  padding: 11px 10px;
+  vertical-align: middle;
+  border-bottom: 1px solid #edf2f7;
+}
+
+.td-feature {
+  text-align: left;
+  font-family: var(--font-body);
+  font-size: 0.94rem;
+  font-weight: 600;
+  color: var(--color-dark);
+  padding-left: 14px !important;
+  line-height: 1.35;
+}
+
+.td-status {
+  text-align: center;
+}
+
+/* Hover Row Effect (excluding highlighted pillar) */
+.comparison-table tbody tr:hover td:not(.highlighted-cell) {
+  background-color: #fafbfd;
+}
+
+/* Highlighted Pillar Cells */
+.highlighted-cell {
+  background-color: #f6f9ff;
+  border-left: 2px solid var(--color-primary);
+  border-right: 2px solid var(--color-primary);
+}
+
+.last-leap-cell {
+  border-bottom: 2px solid var(--color-primary) !important;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0, 56, 255, 0.08);
+}
+
+/* Status Badges */
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: transform 0.2s ease;
+}
+
+.status-badge:hover {
+  transform: scale(1.12);
+}
+
+.status-check-leap {
+  width: 26px;
+  height: 26px;
+  background: var(--color-primary);
+  color: #ffffff;
+  box-shadow: 0 3px 10px rgba(0, 56, 255, 0.25);
+}
+
+.status-check {
+  width: 23px;
+  height: 23px;
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+.status-cross {
+  width: 23px;
+  height: 23px;
+  background: #f1f5f9;
+  color: #94a3b8;
+}
+
+.status-partial {
+  width: 23px;
+  height: 23px;
+  background: #fef9c3;
+  color: #d97706;
+}
+
+.comparison-cta-wrap {
+  margin-top: 44px;
+  display: flex;
+  justify-content: center;
+}
+
+/* ==========================================================================
+   Meet Your Mentor Section
+   ========================================================================== */
+.mentor-section {
+  width: 100%;
+  padding: 20px 0 90px;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mentor-container {
+  width: min(100% - 32px, 1100px);
+}
+
+/* Section Header (Consistent with .framework-header, .problems-header, .comparison-header) */
+.mentor-header {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mentor-title {
+  font-family: var(--font-heading);
+  font-size: 2.4rem;
+  font-weight: 600;
+  max-width: 800px;
+  color: var(--color-dark);
+  line-height: 1.15;
+  margin: 0 auto 20px;
+  text-align: center;
+}
+
+.mentor-intro {
+  font-size: 1.25rem;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+  font-weight: 500;
+  max-width: 850px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* 2-Column Body Layout */
+.mentor-layout {
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  gap: 56px;
+  align-items: center;
+}
+
+/* Left Column: Visual Coach Stage (Exact Reference Design) */
+.mentor-visual-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.coach-avatar-stage {
+  position: relative;
+  width: 380px;
+  height: 380px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px; /* clearance for overlapping floating badge */
+}
+
+/* Concentric Dashed Ring */
+.coach-dashed-ring {
+  position: absolute;
+  width: 376px;
+  height: 376px;
+  border-radius: 50%;
+  border: 2px dashed rgba(0, 56, 255, 0.4);
+  pointer-events: none;
+}
+
+/* Inner Circular Portrait Frame */
+.coach-circle-frame {
+  width: 330px;
+  height: 330px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #f8faff 0%, #FFD600 100%);
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  box-shadow: 0 16px 36px rgba(0, 56, 255, 0.09);
+  border: 1px solid rgba(0, 56, 255, 0.08);
+}
+
+.coach-photo {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  object-position: bottom center;
+   
+  filter: drop-shadow(0 10px 18px rgba(0, 56, 255, 0.12));
+}
+
+/* Floating Overlapping Name Badge */
+.coach-floating-card {
+  position: absolute;
+  bottom: -18px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #ffffff;
+  padding: 20px 30px;
+  border-radius: 14px;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.04);
+  text-align: center;
+  width: max-content;
+  max-width: 100%;
+  z-index: 2;
+  
+}
+
+.coach-name {
+  font-family: var(--font-heading);
+  font-size: 1.45rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: 3px;
+  line-height: 1.2;
+}
+
+.coach-designation {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-dark);
+  white-space: nowrap;
+}
+
+/* Right Column: Content Typography & Layout */
+.mentor-content-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.mentor-bio-box {
+  margin-bottom: 24px;
+}
+
+.mentor-bio-lead {
+  font-size: 1.12rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.mentor-bio-lead strong {
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+.mentor-bio-desc {
+  font-size: 1.12rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+ 
+
+/* 4 Verified Highlights Grid */
+.mentor-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 100%;
+
+}
+
+.mentor-stat-card {
+  background: #ffffff;
+  padding: 22px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.07);
+   display: flex;
+   align-items: center;
+  flex-direction: column;
+  gap: 3px;
+ }
+
+.mentor-stat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(0, 56, 255, 0.08);
+}
+
+.mentor-stat-value {
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  line-height: 1.2;
+}
+
+.mentor-stat-label {
+  font-size: 0.88rem;
+  color: var(--color-text-muted);
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+/* Focus Statement Callout Box (Consistent with .stats-callout-box) */
+.mentor-callout-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 48px;
+  width: 1200px;
+}
+
+.mentor-callout-box {
+  background-color: #f1f5f9;
+  padding: 28px 40px;
+  border-radius: 16px;
+  max-width: 1200px;
+  width: 100%;
+   text-align: center;
+}
+
+.mentor-callout-text {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  color: var(--color-text);
+  font-weight: 500;
+}
+
+.mentor-callout-text strong {
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+.mentor-cta-wrap {
+  margin-top: 48px;
+  display: flex;
+  justify-content: center;
+}
+
+/* ==========================================================================
+   Final Breakthrough / CTA Section
+   ========================================================================== */
+.final-cta-section {
+  width: 100%;
+  padding: 20px 0 110px;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+}
+
+.container.final-cta-container,
+.final-cta-container {
+  width: min(100% - 32px, 1240px);
+  max-width: 1240px;
+  display: flex;
+  justify-content: center;
+}
+
+.final-cta-card {
+  width: 100%;
+  max-width: 1200px;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 56px 48px;
+   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.07);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.final-cta-title {
+  font-family: var(--font-heading);
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: var(--color-dark);
+  line-height: 1.2;
+  margin-bottom: 18px;
+  max-width: 960px;
+}
+
+.final-cta-subtitle {
+  font-size: 1.3rem;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+  font-weight: 500;
+  max-width: 860px;
+  margin-bottom: 24px;
+}
+
+.final-cta-pitch {
+  font-size: 1.15rem;
+  color: var(--color-text);
+  line-height: 1.6;
+  font-weight: 500;
+  max-width: 920px;
+  margin-bottom: 26px;
+}
+
+.final-cta-pitch strong {
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+/* Step Journey Flow Pills */
+.final-cta-flow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 44px;
+  max-width: 1100px;
+}
+
+.flow-pill {
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: var(--color-primary);
+  padding: 8px 18px;
+  border-radius: 6px;
+   white-space: nowrap;
+}
+
+.flow-arrow {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--color-primary);
+}
+
+.final-cta-btn-wrap {
+  display: flex;
+  justify-content: center;
+}
+
 /* Responsive Breakpoints */
 @media (max-width: 992px) {
   .hero-title {
@@ -1156,8 +1731,44 @@ body {
   .testimonials-intro {
     font-size: 1.1rem;
   }
+  .mentor-title {
+    font-size: 1.9rem;
+  }
+  .mentor-intro {
+    font-size: 1.1rem;
+  }
   .testimonials-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .mentor-layout {
+    grid-template-columns: 1fr;
+    gap: 44px;
+  }
+  .mentor-visual-col {
+    display: flex;
+    justify-content: center;
+  }
+  .mentor-content-col {
+    align-items: center;
+    text-align: center;
+  }
+  .mentor-bio-box {
+    text-align: center;
+  }
+  .mentor-callout-box {
+    text-align: left;
+  }
+  .final-cta-card {
+    padding: 44px 28px;
+  }
+  .final-cta-title {
+    font-size: 2.1rem;
+  }
+  .final-cta-subtitle {
+    font-size: 1.15rem;
+  }
+  .final-cta-pitch {
+    font-size: 1.05rem;
   }
 }
 
@@ -1295,5 +1906,106 @@ body {
     width: 300px;
     max-width: 300px;
     padding: 20px 18px;
+  }
+  .comparison-section {
+    padding: 40px 0 60px;
+  }
+  .comparison-title {
+    font-size: 1.6rem;
+  }
+  .comparison-intro {
+    font-size: 1.05rem;
+  }
+  .comparison-table-wrapper {
+    padding: 16px 12px 20px;
+    border-radius: 18px;
+  }
+  .comparison-cta-wrap {
+    margin-top: 32px;
+  }
+  .mentor-section {
+    padding: 40px 0 60px;
+  }
+  .mentor-header {
+    margin-bottom: 36px;
+  }
+  .mentor-title {
+    font-size: 1.6rem;
+    margin-bottom: 14px;
+  }
+  .mentor-intro {
+    font-size: 1.05rem;
+  }
+  .coach-avatar-stage {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 24px;
+  }
+  .coach-dashed-ring {
+    width: 300px;
+    height: 300px;
+  }
+  .coach-circle-frame {
+    width: 260px;
+    height: 260px;
+  }
+  .coach-floating-card {
+    padding: 12px 20px;
+    bottom: -14px;
+  }
+  .coach-name {
+    font-size: 1.25rem;
+  }
+  .coach-designation {
+    font-size: 0.8rem;
+  }
+  .mentor-stats-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .mentor-stat-value {
+    font-size: 1.35rem;
+  }
+  .mentor-callout-container {
+    margin-top: 32px;
+  }
+  .mentor-callout-box {
+    padding: 20px 20px;
+    text-align: left;
+  }
+  .mentor-callout-text {
+    font-size: 1.05rem;
+  }
+  .mentor-cta-wrap {
+    margin-top: 36px;
+  }
+  .final-cta-section {
+    padding: 30px 0 80px;
+  }
+  .final-cta-card {
+    padding: 36px 18px;
+    border-radius: 20px;
+  }
+  .final-cta-title {
+    font-size: 1.65rem;
+  }
+  .final-cta-subtitle {
+    font-size: 1.05rem;
+    margin-bottom: 20px;
+  }
+  .final-cta-pitch {
+    font-size: 0.98rem;
+    margin-bottom: 20px;
+  }
+  .final-cta-flow {
+    gap: 8px;
+    margin-bottom: 32px;
+  }
+  .flow-pill {
+    font-size: 0.85rem;
+    padding: 6px 14px;
+  }
+  .flow-arrow {
+    font-size: 0.95rem;
   }
 }
