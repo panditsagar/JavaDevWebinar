@@ -73,4 +73,19 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
+
+  // 4. FAQ Accordion Behavior (close others when one opens)
+  const faqItems = document.querySelectorAll(".faq-item");
+  faqItems.forEach(item => {
+    item.addEventListener("toggle", () => {
+      if (item.open) {
+        faqItems.forEach(otherItem => {
+          if (otherItem !== item && otherItem.open) {
+            otherItem.open = false;
+          }
+        });
+      }
+    });
+  });
 });
+
