@@ -202,33 +202,7 @@ document.addEventListener("DOMContentLoaded", () => {
   updateTimer();
   setInterval(updateTimer, 1000);
 
-  // 2. Copy Code Snippet Functionality
-  const copyBtn = document.getElementById("copy-code-btn");
-  const copyLabel = document.getElementById("copy-btn-label");
-  const codeBlock = document.getElementById("java-code-block");
-
-  if (copyBtn && codeBlock && copyLabel) {
-    copyBtn.addEventListener("click", async () => {
-      try {
-        const textToCopy = codeBlock.innerText;
-        await navigator.clipboard.writeText(textToCopy);
-        
-        const originalLabel = copyLabel.textContent;
-        copyLabel.textContent = "Copied!";
-        copyBtn.style.color = "#50fa7b";
-        copyBtn.style.borderColor = "#50fa7b";
-
-        setTimeout(() => {
-          copyLabel.textContent = originalLabel;
-          copyBtn.style.color = "";
-          copyBtn.style.borderColor = "";
-        }, 2000);
-      } catch (err) {
-        console.error("Failed to copy snippet: ", err);
-      }
-    });
-  }
-
+ 
   // 3. Smooth Navigation Links Scroll
   const navLinks = document.querySelectorAll('a[href^="#"]');
   navLinks.forEach(anchor => {
