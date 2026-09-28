@@ -172,6 +172,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
   renderTestimonials();
 
+  const mobileFooterQuery = window.matchMedia("(max-width: 768px)");
+  const updateMobileStickyFooter = () => {
+    const shouldShow = mobileFooterQuery.matches && window.scrollY > 140;
+    document.body.classList.toggle(
+      "mobile-sticky-footer-visible",
+      shouldShow,
+    );
+  };
+
+  updateMobileStickyFooter();
+  window.addEventListener("scroll", updateMobileStickyFooter, {
+    passive: true,
+  });
+  mobileFooterQuery.addEventListener("change", updateMobileStickyFooter);
+
   // 1. Live Countdown Timer Setup
   const timerElement = document.getElementById("countdown-timer");
 

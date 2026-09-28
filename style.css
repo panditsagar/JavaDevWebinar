@@ -2534,7 +2534,7 @@ body {
     margin-bottom: 14px;
   }
   .faq-intro {
-    font-size: 1.05rem;
+    font-size: 0.95rem;
   }
   .faq-question {
     padding: 16px 18px;
@@ -2551,7 +2551,23 @@ body {
     min-width: 28px;
   }
   body {
+    padding-bottom: 0;
+  }
+  body.mobile-sticky-footer-visible {
     padding-bottom: 88px;
+  }
+  .sticky-footer {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(110%);
+    transition:
+      opacity 0.2s ease,
+      transform 0.2s ease;
+  }
+  body.mobile-sticky-footer-visible .sticky-footer {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
   }
   .sticky-footer-inner {
     min-height: 72px;
@@ -2575,10 +2591,11 @@ body {
   }
   .top-badge {
     width: 100%;
-    font-size: 0.95rem;
-    padding: 10px 14px;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 12px 14px;
     line-height: 1.25;
-    border-radius: 0 0 16px 16px;
+    border-radius: 0 0 18px 18px;
   }
   .hero-title {
     font-size: 1.82rem;
@@ -2920,7 +2937,7 @@ body {
     margin-top: 32px;
   }
   .final-cta-section {
-    padding: 38px 0 78px;
+    padding: 8px 0 28px;
   }
   .final-cta-container {
     width: min(100% - 24px, 1240px);
@@ -2930,7 +2947,7 @@ body {
     border-radius: 16px;
   }
   .final-cta-title {
-    font-size: 1.62rem;
+    font-size: 1.5rem;
     line-height: 1.2;
     margin-bottom: 14px;
   }
@@ -2938,12 +2955,12 @@ body {
     display: none;
   }
   .final-cta-subtitle {
-    font-size: 1rem;
+    font-size: 0.9rem;
     line-height: 1.5;
     margin-bottom: 18px;
   }
   .final-cta-pitch {
-    font-size: 0.94rem;
+    font-size: 1rem;
     line-height: 1.5;
     margin-bottom: 20px;
   }
@@ -3022,7 +3039,8 @@ body {
   }
   .mentor-bio-lead,
   .mentor-bio-desc {
-    font-size: 0.98rem;
+     padding: 0 14px;
+    font-size: 0.9rem;
     line-height: 1.55;
   }
   .mentor-stats-grid {
@@ -3037,7 +3055,7 @@ body {
     text-align: center;
   }
   .mentor-stat-label {
-    font-size: 0.82rem;
+    font-size: 0.85rem;
   }
   .mentor-callout-container {
     width: min(100% - 24px, 1100px);
