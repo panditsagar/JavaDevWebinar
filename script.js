@@ -4,101 +4,101 @@ document.addEventListener("DOMContentLoaded", () => {
       name: "Vijay",
       image: "testimonial/1.png",
       tag: "4x Switch to a Product Based Company",
+      fromSalary: "11.5 LPA",
+      toSalary: "40 LPA",
+      hike: "4X HIKE",
+      quote:
+        "Cracckify has been a game-changing experience in my career growth journey. I joined with the goal of breaking out of stagnation, and with the consistent support, guidance, mock interviews, and structured preparation, I was able to land an incredible opportunity with a 4x hike.",
+    },
+    {
+      name: "Jeevan",
+      image: "testimonial/2.png",
+      tag: "2x Switch to Product Based Company",
+      fromSalary: "14 LPA",
+      toSalary: "30 LPA",
+      hike: "2X HIKE",
+      quote:
+        "Excellent mentorship which builds a strong foundation not only for interviews but also as life lessons for our professional life. They always keep us motivated and help us to increase our confidence.",
+    },
+    {
+      name: "Naveen",
+      image: "testimonial/3.png",
+      tag: "2x Switch to Product Based Company",
+      fromSalary: "11 LPA",
+      toSalary: "24 LPA",
+      hike: "2X HIKE",
+      quote:
+        "Cracckify helped me to achieve 120% hike and boosted my confidence to land in a product based company. Mentors like Abhishek and Jeevan are needed for engineers who are struggling in low pay jobs.",
+    },
+    {
+      name: "Vijay",
+      image: "testimonial/4.png",
+      tag: "Service to Product Based Company",
       fromSalary: "18 LPA",
       toSalary: "30 LPA",
       hike: "70% HIKE",
       quote:
-        "Their 1-1 guidance and mentoring is impressive. Despite being good at DSA, I was not able to clear interviews. Rigorous mocks and 1-1s helped me break through the barrier.",
+        "Their 1-1 guidance and mentoring is impressive. Despite being good at DSA  wasn't able to clear interviews. Rigorous mocks & 1-1s helped me breakthrough the barrier.",
     },
     {
-      name: "Rahul Sharma",
-      image: "testimonial/2.png",
-      tag: "90-Day Notice Period Solved",
-      fromSalary: "12 LPA",
-      toSalary: "32 LPA",
-      hike: "166% HIKE",
-      quote:
-        "I was stuck in a 90-day notice period trap with 4 years of experience. Cracckify's 6P SalaryLEAP system gave me the exact strategy to target product companies and crack Swiggy in 60 days.",
-    },
-    {
-      name: "Priya Nair",
-      image: "testimonial/3.png",
-      tag: "System Architecture Mastered",
-      fromSalary: "14 LPA",
-      toSalary: "36 LPA",
-      hike: "157% HIKE",
-      quote:
-        "I used to fail in System Design and LLD rounds. The structured framework taught in the masterclass helped me answer complex architecture questions with total confidence.",
-    },
-    {
-      name: "Ankit Verma",
-      image: "testimonial/4.png",
-      tag: "3 Multiple Offer Letters",
-      fromSalary: "18 LPA",
-      toSalary: "45 LPA",
-      hike: "150% HIKE",
-      quote:
-        "Negotiation leverage was the game changer for me. Holding 3 offer letters gave me the confidence to push for 45 LPA. Best investment for any Java developer.",
-    },
-    {
-      name: "Sneha Kulkarni",
+      name: "Elizabeth",
       image: "testimonial/5.png",
-      tag: "Tier-3 College to Tier-1 Product",
+      tag: "TCS → Infosys",
       fromSalary: "8 LPA",
       toSalary: "24 LPA",
       hike: "200% HIKE",
       quote:
-        "Coming from a Tier-3 college, I thought top product companies were out of reach. The step-by-step roadmap and mock interview feedback completely transformed my preparation.",
+        "Cracckify really helped me build a solid foundation in software engineering with its organized sessions on Coding, Algorithms, and Design principles. The focus on thinking for myself was invaluable.",
     },
     {
-      name: "Rohan Mehta",
+      name: "Aleemsha",
       image: "testimonial/6.png",
-      tag: "Backend Lead Transition",
-      fromSalary: "22 LPA",
-      toSalary: "42 LPA",
-      hike: "91% HIKE",
+      tag: "2x Switch to Service to Product Based",
+      fromSalary: "6 LPA",
+      toSalary: "13 LPA",
+      hike: "2X HIKE",
       quote:
-        "Cracckify helped me bridge the gap between a Senior Developer and a Backend Lead. The deep dive into Spring Boot internals and Microservices was top-notch.",
+        "I learned Java coding from Cracckify and it helped me grow a lot in my career. The explanations were clear, practical, and very easy to understand.",
     },
     {
-      name: "Divya Reddy",
+      name: "Atul",
       image: "testimonial/7.png",
       tag: "Non-Tech Service to Fintech",
       fromSalary: "10 LPA",
       toSalary: "28 LPA",
       hike: "180% HIKE",
       quote:
-        "Transitioning from legacy support to high-throughput Java microservices felt impossible until I joined. I cracked a top fintech firm with a 180% salary jump.",
+        "I'm very thankful to Cracckify for the excellent support during my interview preparation. The mock interviews they conducted and the guidance they provided helped me understand my gaps.",
     },
     {
-      name: "Karan Kapoor",
+      name: "Krima",
       image: "testimonial/8.png",
       tag: "Career Break Comeback",
       fromSalary: "15 LPA",
       toSalary: "35 LPA",
       hike: "133% HIKE",
       quote:
-        "After a 1-year career gap, recruiters were skeptical. Cracckify's interview framework helped me present my project experience effectively and secure 2 top offers.",
+        "Just loved the experience of learning and earning better. Love the way Abhishek takes one on one counselling and helps us and how Jeevan puts more and more efforts on explaining things.",
     },
     {
-      name: "Meera Joshi",
+      name: "Nuthan",
       image: "testimonial/9.png",
       tag: "Legacy Java to Cloud-Native",
       fromSalary: "16 LPA",
       toSalary: "38 LPA",
       hike: "137% HIKE",
       quote:
-        "I had 5+ years in monolithic Java apps. Learning reactive programming, Kafka, and Kubernetes here allowed me to land a Senior Cloud Engineer role.",
+        "If we have any doubts and questions they will guide you properly. Even while you are planning to switch they will connect with you regularly to know if you are getting stuck anywhere.",
     },
     {
-      name: "Aman Gupta",
+      name: "Pratik",
       image: "testimonial/10.png",
-      tag: "60-Day Fast Track Switch",
+      tag: "Service to Product Based Company",
       fromSalary: "11 LPA",
       toSalary: "29 LPA",
       hike: "163% HIKE",
       quote:
-        "The structured daily roadmap saved me months of random tutorial watching. I focused on high-yield interview topics and cleared 3 product rounds back-to-back.",
+        "The Best Guide in Cracking Interviews. I was a part of Cracckify community and joined it when looking for my first job change. It helped me in cracking big product company offers.",
     },
   ];
 
@@ -153,10 +153,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     track.innerHTML = [
       ...rowTestimonials.map((testimonial) =>
-        createTestimonialCard(testimonial)
+        createTestimonialCard(testimonial),
       ),
       ...rowTestimonials.map((testimonial) =>
-        createTestimonialCard(testimonial, true)
+        createTestimonialCard(testimonial, true),
       ),
     ].join("");
   };
@@ -174,9 +174,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // 1. Live Countdown Timer Setup
   const timerElement = document.getElementById("countdown-timer");
-  
+
   // Set target webinar date (3 days, 14 hours from now)
-  const targetDate = new Date().getTime() + (3 * 24 * 60 * 60 * 1000) + (14 * 60 * 60 * 1000) + (22 * 60 * 1000);
+  const targetDate =
+    new Date().getTime() +
+    3 * 24 * 60 * 60 * 1000 +
+    14 * 60 * 60 * 1000 +
+    22 * 60 * 1000;
 
   function updateTimer() {
     const now = new Date().getTime();
@@ -188,11 +192,13 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const hours = Math.floor(
+      (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
+    );
     const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    const pad = (n) => String(n).padStart(2, '0');
+    const pad = (n) => String(n).padStart(2, "0");
 
     if (timerElement) {
       timerElement.textContent = `${pad(days)}d ${pad(hours)}h ${pad(minutes)}m ${pad(seconds)}s`;
@@ -202,11 +208,10 @@ document.addEventListener("DOMContentLoaded", () => {
   updateTimer();
   setInterval(updateTimer, 1000);
 
- 
   // 3. Smooth Navigation Links Scroll
   const navLinks = document.querySelectorAll('a[href^="#"]');
-  navLinks.forEach(anchor => {
-    anchor.addEventListener("click", function(e) {
+  navLinks.forEach((anchor) => {
+    anchor.addEventListener("click", function (e) {
       const targetId = this.getAttribute("href");
       if (targetId === "#" || !targetId) return;
 
@@ -215,7 +220,7 @@ document.addEventListener("DOMContentLoaded", () => {
         e.preventDefault();
         targetSection.scrollIntoView({
           behavior: "smooth",
-          block: "start"
+          block: "start",
         });
       }
     });
@@ -223,10 +228,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // 4. FAQ Accordion Behavior (close others when one opens)
   const faqItems = document.querySelectorAll(".faq-item");
-  faqItems.forEach(item => {
+  faqItems.forEach((item) => {
     item.addEventListener("toggle", () => {
       if (item.open) {
-        faqItems.forEach(otherItem => {
+        faqItems.forEach((otherItem) => {
           if (otherItem !== item && otherItem.open) {
             otherItem.open = false;
           }
